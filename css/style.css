@@ -1,0 +1,39 @@
+
+/** GLOBALES **/
+.contenedor {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HEADER */
+.site-header.inicio {
+    background-image: url(../img/header.jpg);
+    background-position: center center; /* centra la imagen desde el centro */
+    background-size: cover; /* Toma todo el espacio disponible en alto y ancho pero siempre guardando las proporciones*/
+    height:100vh;           /* Ajusta la imagen a la altura de la pantalla */
+    min-height: 600px;      /* Le da un tamaño mínimo a la imagen para que no se vaya a ver fea */
+
+}
+.barra {
+    display: flex; /* Activa FlexBox */
+    /* justify-content: ; Alinea Horizontalmente */
+    align-items: center;  /* Alinea Verticalmente */
+    /* justify-content: space-around; Distribuye los elementos de forma proporcional y deja cierto espacio*/
+    justify-content: space-between; /* Alinear a la derecha e izquierda los elementos */
+    padding-top: 30px; /* es el espacio del elemento hacia adentro */
+}
+
+/* NAVEGACION */
+.navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.navegacion a:hover {
+    color: #71B100;
+}
+.navegacion a:last-of-type { /* Pseudo selector */ /* Quita el margen del último elemento */
+    margin: 0;
+}

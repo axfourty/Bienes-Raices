@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Raíces</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                <img src="./img/logo.svg" alt="Logo Bienes Raices">
+                </a>
+                
+                <nav class="navegacion">
+                    <a href="/">Home</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div> <!-- contenedor -->
+    </header>
+
+    <h1 class="fw-300 centrar-texto">Contacto</h1>
+    <img src="img/destacada3.jpg" alt="Imagen Principal">
+
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="fw-300 centrar-texto">Llena el Formulario de Contacto</h2>
+
+        <form action="">
+            <fieldset>
+
+                <legend>Información Personal</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Tu Nombre">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Tu Correo Electrónico" required>
+                
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" placeholder="Tu teléfono" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje"></textarea>
+
+            </fieldset>
+            
+            <fieldset>
+                <legend>Información Sobre Propiedad</legend>
+                <label for="opciones">Vende o Compra</label>        
+                <select id="opciones">
+                    <option value="" disabled selected>-- Seleccione --</option><!-- Se usa para seleccionar una opción por default -->
+                    <option value="">Compra</option>
+                    <option value="">Vende</option>
+                </select>
+
+                <label for="cantidad">Cantidad</label>
+                <input type="number" min="0" max="10" step="5"><!-- Step sirve para saltar en numeros -->
+
+            <fieldset>
+                <legend>Contacto</legend>
+
+                <p>Como desea ser Contactado</p>
+                <label for="telefono">Teléfono</label>
+                <input type="radio" name="contacto" value="telefono" id="telefono"> <!-- Es la forma en la que accede a su valor / el name se agrupan para que el radio identifique solo una opción -->
+                
+                <label for="email">E-mail</label>
+                <input type="radio" name="contacto" value="correo" id="correo"> <!-- Ya que tienen el mismo name, para poder indentificarlos con un lenguaje de backend, se utiliza "value" únicamente en radio buttons y select-->
+               
+                <p>Si eligió teléfono, elija la fecha y hora</p>
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha">
+                <label for="hora">Hora</label>
+                <input type="time" id="hora" min="09:00" max="18:00">
+                
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="">
+
+        </form>
+
+    </main>
+
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <p class="copyright">Todos los Derechos Reservados 2021 &copy;</p>
+        </div>
+    </footer>
+
+</body>
+</html>

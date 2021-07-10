@@ -70,11 +70,14 @@
                 <legend>Contacto</legend>
 
                 <p>Como desea ser Contactado</p>
-                <label for="telefono">Teléfono</label>
-                <input type="radio" name="contacto" value="telefono" id="telefono"> <!-- Es la forma en la que accede a su valor / el name se agrupan para que el radio identifique solo una opción -->
-                
-                <label for="email">E-mail</label>
-                <input type="radio" name="contacto" value="correo" id="correo"> <!-- Ya que tienen el mismo name, para poder indentificarlos con un lenguaje de backend, se utiliza "value" únicamente en radio buttons y select-->
+
+                <div class="forma-contacto">
+                    <label for="telefono">Teléfono</label>
+                    <input type="radio" name="contacto" value="telefono" id="telefono"> <!-- Es la forma en la que accede a su valor / el name se agrupan para que el radio identifique solo una opción -->
+                    
+                    <label for="email">E-mail</label>
+                    <input type="radio" name="contacto" value="correo" id="correo"> <!-- Ya que tienen el mismo name, para poder indentificarlos con un lenguaje de backend, se utiliza "value" únicamente en radio buttons y select-->
+                </div>
                
                 <p>Si eligió teléfono, elija la fecha y hora</p>
                 <label for="fecha">Fecha</label>
